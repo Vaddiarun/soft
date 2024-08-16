@@ -14,12 +14,16 @@ dotenv.config();
 
 const app = express();
 
+app.use(cors({
+    origin: "https://hotelsoftware.onrender.com",
+    credentials: true
+}))
+
 app.use(express.json());
 
 app.use(cookieParser())
 
 const __dirname = path.resolve()
-
 
 const PORT = process.env.PORT || 5000;
 
