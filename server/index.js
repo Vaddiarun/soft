@@ -15,7 +15,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: "https://hotelsoftware.onrender.com",
+    origin: "*",
     credentials: true
 }))
 
