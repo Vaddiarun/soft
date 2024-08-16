@@ -36,10 +36,6 @@ connectDB();
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
-app.get("/", (req, res) => {
-    return res.json("Sample Data");
-})
-
 app.use("/api/v1/menu", menuRoutes);
 app.use("/api/v1/categories", CategoryRoutes);
 app.use("/api/v1/orders", orderRoutes);
