@@ -15,4 +15,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </PersistGate>
   </React.StrictMode>
 );
-git;
