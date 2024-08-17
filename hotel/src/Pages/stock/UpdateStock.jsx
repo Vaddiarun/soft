@@ -44,14 +44,33 @@ export default function UpdateStock() {
             Update Stock Here
           </h1>
           <form className="flex flex-col" onSubmit={handlesubmit}>
-            <label className="mb-2 text-gray-700">Enter Stock Name</label>
+            {/* <label className="mb-2 text-gray-700">Enter Stock Name</label>
             <input
               type="text"
               className="mb-4 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
               id="name"
               value={formdata.name}
               onChange={handleChange}
-            />
+            /> */}
+            <label className="mb-2 text-gray-700">Select Stock Name</label>
+            <select className="mb-4 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <option value="MOMOS">MOMOS</option>
+              <option value="MILKSHAKES">MILKSHAKES</option>
+              <option value="FALOODA">FALOODA</option>
+              <option value="LASSI">LASSI</option>
+              <option value="BURGERS">BURGERS</option>
+              <option value="FRIES">FRIES</option>
+              <option value="MAGGI">MAGGI</option>
+              <option value="ICECREAM">ICECREAM</option>
+              <option value="SPECIAL-ICECREAMS">SPECIAL-ICECREAMS</option>
+              <option value="MUDS">MUDS</option>
+              <option value="DRY-FRUIT-SHAKE">DRY-FRUIT-SHAKE</option>
+              <option value="COFFEE">COFFEE</option>
+              <option value="CAPPUCCINO">CAPPUCCINO</option>
+              <option value="MOJITO">MOJITO</option>
+              <option value="ADDONS">ADDONS</option>
+              <option value="FRESHJUICE">FRESHJUICE</option>
+            </select>
             <label className="mb-2 text-gray-700">Enter Stock Quantity</label>
             <input
               type="number"
@@ -60,6 +79,7 @@ export default function UpdateStock() {
               onChange={handleChange}
               value={formdata.quantity}
             />
+
             <button
               type="submit"
               className="bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition duration-300"
